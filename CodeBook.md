@@ -38,68 +38,68 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
--tBodyAcc-XYZ
--tGravityAcc-XYZ
--tBodyAccJerk-XYZ
--tBodyGyro-XYZ
--tBodyGyroJerk-XYZ
--tBodyAccMag
--tGravityAccMag
--tBodyAccJerkMag
--tBodyGyroMag
--tBodyGyroJerkMag
--fBodyAcc-XYZ
--fBodyAccJerk-XYZ
--fBodyGyro-XYZ
--fBodyAccMag
--fBodyAccJerkMag
--fBodyGyroMag
--fBodyGyroJerkMag
+* tBodyAcc-XYZ
+* tGravityAcc-XYZ
+* tBodyAccJerk-XYZ
+* tBodyGyro-XYZ
+* tBodyGyroJerk-XYZ
+* tBodyAccMag
+* tGravityAccMag
+* tBodyAccJerkMag
+* tBodyGyroMag
+* tBodyGyroJerkMag
+* fBodyAcc-XYZ
+* fBodyAccJerk-XYZ
+* fBodyGyro-XYZ
+* fBodyAccMag
+* fBodyAccJerkMag
+* fBodyGyroMag
+* fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
 
--mean(): Mean value
--std(): Standard deviation
--mad(): Median absolute deviation 
--max(): Largest value in array
--min(): Smallest value in array
--sma(): Signal magnitude area
--energy(): Energy measure. Sum of the squares divided by the number of values. 
--iqr(): Interquartile range 
--entropy(): Signal entropy
--arCoeff(): Autorregresion coefficients with Burg order equal to 4
--correlation(): correlation coefficient between two signals
--maxInds(): index of the frequency component with largest magnitude
--meanFreq(): Weighted average of the frequency components to obtain a mean frequency
--skewness(): skewness of the frequency domain signal 
--kurtosis(): kurtosis of the frequency domain signal 
--bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
--angle(): Angle between to vectors.
+* mean(): Mean value
+* std(): Standard deviation
+* mad(): Median absolute deviation 
+* max(): Largest value in array
+* min(): Smallest value in array
+* sma(): Signal magnitude area
+* energy(): Energy measure. Sum of the squares divided by the number of values. 
+* iqr(): Interquartile range 
+* entropy(): Signal entropy
+* arCoeff(): Autorregresion coefficients with Burg order equal to 4
+* correlation(): correlation coefficient between two signals
+* maxInds(): index of the frequency component with largest magnitude
+* meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+* skewness(): skewness of the frequency domain signal 
+* kurtosis(): kurtosis of the frequency domain signal 
+* bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+* angle(): Angle between to vectors.
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
--gravityMean
--tBodyAccMean
--tBodyAccJerkMean
--tBodyGyroMean
--tBodyGyroJerkMean
+* gravityMean
+* tBodyAccMean
+* tBodyAccJerkMean
+* tBodyGyroMean
+* tBodyGyroJerkMean
 
 The complete list of variables of each feature vector is available in 'features.txt'
 
 ###The data was delivered in these four dataset:
-- 'features.txt': List of all features.
-- 'activity_labels.txt': Links the class labels with their activity name.
-- 'train/X_train.txt': Training set.
-- 'train/y_train.txt': Training labels.
-- 'test/X_test.txt': Test set.
-- 'test/y_test.txt': Test labels.
+* 'features.txt': List of all features.
+* 'activity_labels.txt': Links the class labels with their activity name.
+* 'train/X_train.txt': Training set.
+* 'train/y_train.txt': Training labels.
+* 'test/X_test.txt': Test set.
+* 'test/y_test.txt': Test labels.
 
 ###For each record it is provided:
-- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
-- Triaxial Angular velocity from the gyroscope. 
-- A 561-feature vector with time and frequency domain variables. 
-- Its activity label. 
-- An identifier of the subject who carried out the experiment.
+* Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+* Triaxial Angular velocity from the gyroscope. 
+* A 561-feature vector with time and frequency domain variables. 
+* Its activity label. 
+* An identifier of the subject who carried out the experiment.
 
 ##The Final Data Set (Named Step5Data.txt)
 The raw data for both the training and testing data read into R, along with the features.txt and activity_labels.txt files.
@@ -114,91 +114,91 @@ cleanly named to help the user understand the data and what conclusions they can
 
 ##The Data
 ###This is a list of the variables in the tidy data and a description of each one for the user's reference:
--subjectid = Participant ID
--activity = Activity Engaged
--TimeBodyAcc.mean...XDirection = Time body measurement for accelorameter in X Direction (Mean)
--TimeBodyAcc.mean...YDirection = Time body measurement for accelorameter in Y Direction (Mean)
--TimeBodyAcc.mean...ZDirection = Time body measurement for accelorameter in Z Direction (Mean)
--TimeGravityAcc.mean...XDirection = Time gravity measurement accelorometer X Direction (Mean)
--TimeGravityAcc.mean...YDirection = Time gravity measurement accelorometer Y Direction (Mean)
--TimeGravityAcc.mean...ZDirection = Time gravity measurement accelorometer Z Direction (Mean)
--TimeBodyAccJerk.mean...XDirection = Time body  measurement accelorometer jerk X Direction (Mean)
--TimeBodyAccJerk.mean...YDirection = Time body  measurement accelorometer jerk Y Direction (Mean)
--TimeBodyAccJerk.mean...ZDirection = Time body  measurement accelorometer jerk Z Direction (Mean)
--TimeBodyGyro.mean...XDirection = Time body measurement gyroscope X Direction (Mean)
--TimeBodyGyro.mean...YDirection = Time body measurement gyroscope Y Direction (Mean)
--TimeBodyGyro.mean...ZDirection = Time body measurement gyroscope Z Direction (Mean)
--TimeBodyGyroJerk.mean...XDirection = Time body measurement X Direction (Mean)
--TimeBodyGyroJerk.mean...YDirection = Time body measurement Y Direction (Mean)
--TimeBodyGyroJerk.mean...ZDirection = Time body measurement Z Direction (Mean)
--TimeBodyAccMagnitude.mean.. = Time body measurement accelorometer magnitude (Mean)
--TimeGravityAccMagnitude.mean.. = Time body measurement accelorometer magnitude (Mean)
--TimeBodyAccJerkMagnitude.mean.. = Time body measurement accelorometer jerk magnitude (Mean)
--TimeBodyGyroMagnitude.mean.. = Time body measurement gyroscope magnitude (Mean)
--TimeBodyGyroJerkMagnitude.mean.. = Time body measurement gyroscope jerk magnitude (Mean)
--FourierTransformBodyAcc.mean...XDirection = Fast Fourier Transform accelorometer X Direction (Mean)
--FourierTransformBodyAcc.mean...YDirection = Fast Fourier Transform accelorometer Y Direction (Mean)
--FourierTransformBodyAcc.mean...ZDirection = Fast Fourier Transform accelorometer Z Direction (Mean)
--FourierTransformBodyAcc.meanFreq...XDirection = Fast Fourier Transform accelorometer X Direction (Meanfreq)
--FourierTransformBodyAcc.meanFreq...YDirection = Fast Fourier Transform accelorometer Y Direction (Meanfreq)
--FourierTransformBodyAcc.meanFreq...ZDirection = Fast Fourier Transform accelorometer Z Direction (Meanfreq)
--FourierTransformBodyAccJerk.mean...XDirection = Fast Fourier Transform accelorometer jerk X Direction (Mean)
--FourierTransformBodyAccJerk.mean...YDirection = Fast Fourier Transform accelorometer jerk Y Direction (Mean)
--FourierTransformBodyAccJerk.mean...ZDirection = Fast Fourier Transform accelorometer jerk Z Direction (Mean)
--FourierTransformBodyAccJerk.meanFreq...XDirection = Fast Fourier Transform accelorometer jerk X Direction (Meanfreq)
--FourierTransformBodyAccJerk.meanFreq...YDirection = Fast Fourier Transform accelorometer jerk Y Direction (Meanfreq)
--FourierTransformBodyAccJerk.meanFreq...ZDirection = Fast Fourier Transform accelorometer jerk Z Direction (Meanfreq)
--FourierTransformBodyGyro.mean...XDirection = Fast Fourier Transform gyroscope X Direction (Mean)
--FourierTransformBodyGyro.mean...YDirection = Fast Fourier Transform gyroscope Y Direction (Mean)
--FourierTransformBodyGyro.mean...ZDirection = Fast Fourier Transform gyroscope Z Direction (Mean)
--FourierTransformBodyGyro.meanFreq...XDirection = Fast Fourier Transform gyroscope X Direction (Meanfreq)
--FourierTransformBodyGyro.meanFreq...YDirection = Fast Fourier Transform gyroscope Y Direction (Meanfreq)
--FourierTransformBodyGyro.meanFreq...ZDirection = Fast Fourier Transform gyroscope Z Direction (Meanfreq)
--FourierTransformBodyAccMagnitude.mean.. = Fast Fourier Transform body measurement accelorometer magnitude (Mean)
--FourierTransformBodyAccMagnitude.meanFreq.. = Fast Fourier Transform body measurement accelorometer magnitude (Meanfreq)
--FourierTransformBodyBodyAccJerkMagnitude.mean.. = Fast Fourier Transform body measurement accelorometer jerk magnitude (Mean)
--FourierTransformBodyBodyAccJerkMagnitude.meanFreq.. = Fast Fourier Transform body measurement accelorometer jerk magnitude (Meanfreq)
--FourierTransformBodyBodyGyroMagnitude.mean.. = Fast Fourier Transform body measurement gyroscope magnitude (Mean)
--FourierTransformBodyBodyGyroMagnitude.meanFreq.. = Fast Fourier Transform body measurement gyroscope magnitude (Meanfreq)
--FourierTransformBodyBodyGyroJerkMagnitude.mean..  = Fast Fourier Transform body measurement gyroscope jerk magnitude (Mean)
--FourierTransformBodyBodyGyroJerkMagnitude.meanFreq.. = Fast Fourier Transform body measurement gyroscope jerk magnitude (Meanfreq)
--angle.TimeBodyAccMean.gravity. = angle body measurement accelorometer (Mean)
--angle.TimeBodyAccJerkMean..gravityMean. angle time body measurement accelorometer jerk (gravity Mean)
--angle.TimeBodyGyroMean.gravityMean. angle time body measurement gyroscope (gravity Mean)
--angle.TimeBodyGyroJerkMean.gravityMean. = angle time body measurement gyroscope jerk (gravity Mean)
--angle.XDirection.gravityMean. = angle measurement X Direction (gravity Mean)
--angle.YDirection.gravityMean. = angle measurement Y Direction (gravity Mean)
--angle.ZDirection.gravityMean. = angle measurement Z Direction (gravity Mean)
--TimeBodyAcc.std...XDirection = Time body measurement for accelorameter  X Direction (STD)
--TimeBodyAcc.std...YDirection = Time body measurement for accelorameter  Y Direction (STD)
--TimeBodyAcc.std...ZDirection = Time body measurement for accelorameter  Z Direction (STD)
--TimeGravityAcc.std...XDirection = Time gravity measurement for accelorameter X Direction (STD)
--TimeGravityAcc.std...YDirection = Time gravity measurement for accelorameter Y Direction (STD)
--TimeGravityAcc.std...ZDirection = Time gravity measurement for accelorameter Z Direction (STD)
--TimeBodyAccJerk.std...XDirection = Time body measurement for accelorameter jerk X Direction (STD)
--TimeBodyAccJerk.std...YDirection = Time body measurement for accelorameter jerk Y Direction (STD)
--TimeBodyAccJerk.std...ZDirection = Time body measurement for accelorameter jerk Z Direction (STD)
--TimeBodyGyro.std...XDirection = Time body measurement for gyroscope X Direction (STD)
--TimeBodyGyro.std...YDirection = Time body measurement for gyroscope Y Direction (STD)
--TimeBodyGyro.std...ZDirection = Time body measurement for gyroscope Z Direction (STD)
--TimeBodyGyroJerk.std...XDirection = Time body measurement for gyroscope jerk X Direction (STD)
--TimeBodyGyroJerk.std...YDirection = Time body measurement for gyroscope jerk Y Direction (STD)
--TimeBodyGyroJerk.std...ZDirection = Time body measurement for gyroscope jerk Z Direction (STD)
--TimeBodyAccMagnitude.std.. = Time body measurement accelorometer magnitude (STD)
--TimeGravityAccMagnitude.std.. = Time gravity measurement accelorometer magnitude (STD)
--TimeBodyAccJerkMagnitude.std.. = Time body measurement accelorometer jerk magnitude (STD)
--TimeBodyGyroMagnitude.std.. = Time body measurement gyroscope magnitude (STD)
--TimeBodyGyroJerkMagnitude.std.. = Time body measurement gyroscope jerk magnitude (STD)
--FourierTransformBodyAcc.std...XDirection = Fast Fourier Transform accelorometer X Direction (STD)
--FourierTransformBodyAcc.std...YDirection = Fast Fourier Transform accelorometer Y Direction (STD)
--FourierTransformBodyAcc.std...ZDirection = Fast Fourier Transform accelorometer Z Direction (STD)
--FourierTransformBodyAccJerk.std...XDirection = Fast Fourier Transform accelorometer jerk X Direction (STD)
--FourierTransformBodyAccJerk.std...YDirection =  Fast Fourier Transform accelorometer jerk Direction (STD)
--FourierTransformBodyAccJerk.std...ZDirection = Fast Fourier Transform accelorometer jerk Z Direction (STD)
--FourierTransformBodyGyro.std...XDirection =  Fast Fourier Transform Gyroscope X Direction (STD)
--FourierTransformBodyGyro.std...YDirection =  Fast Fourier Transform Gyroscope Y Direction (STD)
--FourierTransformBodyGyro.std...ZDirection =  Fast Fourier Transform Gyroscope Z Direction (STD)
--FourierTransformBodyAccMagnitude.std.. = Fast Fourier Transform body accelorometer magnitude (STD)
--FourierTransformBodyBodyAccJerkMagnitude.std.. = Fast Fourier Transform body accelorometer jerk magnitude (STD)
--FourierTransformBodyBodyGyroMagnitude.std.. = Fast Fourier Transform body gyroscope magnitude (STD)
--FourierTransformBodyBodyGyroJerkMagnitude.std.. = Fast Fourier Transform body gyroscope jerk magnitude (STD)
+* subjectid = Participant ID
+* activity = Activity Engaged
+* TimeBodyAcc.mean...XDirection = Time body measurement for accelorameter in X Direction (Mean)
+* TimeBodyAcc.mean...YDirection = Time body measurement for accelorameter in Y Direction (Mean)
+* TimeBodyAcc.mean...ZDirection = Time body measurement for accelorameter in Z Direction (Mean)
+* TimeGravityAcc.mean...XDirection = Time gravity measurement accelorometer X Direction (Mean)
+* TimeGravityAcc.mean...YDirection = Time gravity measurement accelorometer Y Direction (Mean)
+* TimeGravityAcc.mean...ZDirection = Time gravity measurement accelorometer Z Direction (Mean)
+* TimeBodyAccJerk.mean...XDirection = Time body  measurement accelorometer jerk X Direction (Mean)
+* TimeBodyAccJerk.mean...YDirection = Time body  measurement accelorometer jerk Y Direction (Mean)
+* TimeBodyAccJerk.mean...ZDirection = Time body  measurement accelorometer jerk Z Direction (Mean)
+* TimeBodyGyro.mean...XDirection = Time body measurement gyroscope X Direction (Mean)
+* TimeBodyGyro.mean...YDirection = Time body measurement gyroscope Y Direction (Mean)
+* TimeBodyGyro.mean...ZDirection = Time body measurement gyroscope Z Direction (Mean)
+* TimeBodyGyroJerk.mean...XDirection = Time body measurement X Direction (Mean)
+* TimeBodyGyroJerk.mean...YDirection = Time body measurement Y Direction (Mean)
+* TimeBodyGyroJerk.mean...ZDirection = Time body measurement Z Direction (Mean)
+* TimeBodyAccMagnitude.mean.. = Time body measurement accelorometer magnitude (Mean)
+* TimeGravityAccMagnitude.mean.. = Time body measurement accelorometer magnitude (Mean)
+* TimeBodyAccJerkMagnitude.mean.. = Time body measurement accelorometer jerk magnitude (Mean)
+* TimeBodyGyroMagnitude.mean.. = Time body measurement gyroscope magnitude (Mean)
+* TimeBodyGyroJerkMagnitude.mean.. = Time body measurement gyroscope jerk magnitude (Mean)
+* FourierTransformBodyAcc.mean...XDirection = Fast Fourier Transform accelorometer X Direction (Mean)
+* FourierTransformBodyAcc.mean...YDirection = Fast Fourier Transform accelorometer Y Direction (Mean)
+* FourierTransformBodyAcc.mean...ZDirection = Fast Fourier Transform accelorometer Z Direction (Mean)
+* FourierTransformBodyAcc.meanFreq...XDirection = Fast Fourier Transform accelorometer X Direction (Meanfreq)
+* FourierTransformBodyAcc.meanFreq...YDirection = Fast Fourier Transform accelorometer Y Direction (Meanfreq)
+* FourierTransformBodyAcc.meanFreq...ZDirection = Fast Fourier Transform accelorometer Z Direction (Meanfreq)
+* FourierTransformBodyAccJerk.mean...XDirection = Fast Fourier Transform accelorometer jerk X Direction (Mean)
+* FourierTransformBodyAccJerk.mean...YDirection = Fast Fourier Transform accelorometer jerk Y Direction (Mean)
+* FourierTransformBodyAccJerk.mean...ZDirection = Fast Fourier Transform accelorometer jerk Z Direction (Mean)
+* FourierTransformBodyAccJerk.meanFreq...XDirection = Fast Fourier Transform accelorometer jerk X Direction (Meanfreq)
+* FourierTransformBodyAccJerk.meanFreq...YDirection = Fast Fourier Transform accelorometer jerk Y Direction (Meanfreq)
+* FourierTransformBodyAccJerk.meanFreq...ZDirection = Fast Fourier Transform accelorometer jerk Z Direction (Meanfreq)
+* FourierTransformBodyGyro.mean...XDirection = Fast Fourier Transform gyroscope X Direction (Mean)
+* FourierTransformBodyGyro.mean...YDirection = Fast Fourier Transform gyroscope Y Direction (Mean)
+* FourierTransformBodyGyro.mean...ZDirection = Fast Fourier Transform gyroscope Z Direction (Mean)
+* FourierTransformBodyGyro.meanFreq...XDirection = Fast Fourier Transform gyroscope X Direction (Meanfreq)
+* FourierTransformBodyGyro.meanFreq...YDirection = Fast Fourier Transform gyroscope Y Direction (Meanfreq)
+* FourierTransformBodyGyro.meanFreq...ZDirection = Fast Fourier Transform gyroscope Z Direction (Meanfreq)
+* FourierTransformBodyAccMagnitude.mean.. = Fast Fourier Transform body measurement accelorometer magnitude (Mean)
+* FourierTransformBodyAccMagnitude.meanFreq.. = Fast Fourier Transform body measurement accelorometer magnitude (Meanfreq)
+* FourierTransformBodyBodyAccJerkMagnitude.mean.. = Fast Fourier Transform body measurement accelorometer jerk magnitude (Mean)
+* FourierTransformBodyBodyAccJerkMagnitude.meanFreq.. = Fast Fourier Transform body measurement accelorometer jerk magnitude (Meanfreq)
+* FourierTransformBodyBodyGyroMagnitude.mean.. = Fast Fourier Transform body measurement gyroscope magnitude (Mean)
+* FourierTransformBodyBodyGyroMagnitude.meanFreq.. = Fast Fourier Transform body measurement gyroscope magnitude (Meanfreq)
+* FourierTransformBodyBodyGyroJerkMagnitude.mean..  = Fast Fourier Transform body measurement gyroscope jerk magnitude (Mean)
+* FourierTransformBodyBodyGyroJerkMagnitude.meanFreq.. = Fast Fourier Transform body measurement gyroscope jerk magnitude (Meanfreq)
+* angle.TimeBodyAccMean.gravity. = angle body measurement accelorometer (Mean)
+* angle.TimeBodyAccJerkMean..gravityMean. angle time body measurement accelorometer jerk (gravity Mean)
+* angle.TimeBodyGyroMean.gravityMean. angle time body measurement gyroscope (gravity Mean)
+* angle.TimeBodyGyroJerkMean.gravityMean. = angle time body measurement gyroscope jerk (gravity Mean)
+* angle.XDirection.gravityMean. = angle measurement X Direction (gravity Mean)
+* angle.YDirection.gravityMean. = angle measurement Y Direction (gravity Mean)
+* angle.ZDirection.gravityMean. = angle measurement Z Direction (gravity Mean)
+* TimeBodyAcc.std...XDirection = Time body measurement for accelorameter  X Direction (STD)
+* TimeBodyAcc.std...YDirection = Time body measurement for accelorameter  Y Direction (STD)
+* TimeBodyAcc.std...ZDirection = Time body measurement for accelorameter  Z Direction (STD)
+* TimeGravityAcc.std...XDirection = Time gravity measurement for accelorameter X Direction (STD)
+* TimeGravityAcc.std...YDirection = Time gravity measurement for accelorameter Y Direction (STD)
+* TimeGravityAcc.std...ZDirection = Time gravity measurement for accelorameter Z Direction (STD)
+* TimeBodyAccJerk.std...XDirection = Time body measurement for accelorameter jerk X Direction (STD)
+* TimeBodyAccJerk.std...YDirection = Time body measurement for accelorameter jerk Y Direction (STD)
+* TimeBodyAccJerk.std...ZDirection = Time body measurement for accelorameter jerk Z Direction (STD)
+* TimeBodyGyro.std...XDirection = Time body measurement for gyroscope X Direction (STD)
+* TimeBodyGyro.std...YDirection = Time body measurement for gyroscope Y Direction (STD)
+* TimeBodyGyro.std...ZDirection = Time body measurement for gyroscope Z Direction (STD)
+* TimeBodyGyroJerk.std...XDirection = Time body measurement for gyroscope jerk X Direction (STD)
+* TimeBodyGyroJerk.std...YDirection = Time body measurement for gyroscope jerk Y Direction (STD)
+* TimeBodyGyroJerk.std...ZDirection = Time body measurement for gyroscope jerk Z Direction (STD)
+* TimeBodyAccMagnitude.std.. = Time body measurement accelorometer magnitude (STD)
+* TimeGravityAccMagnitude.std.. = Time gravity measurement accelorometer magnitude (STD)
+* TimeBodyAccJerkMagnitude.std.. = Time body measurement accelorometer jerk magnitude (STD)
+* TimeBodyGyroMagnitude.std.. = Time body measurement gyroscope magnitude (STD)
+* TimeBodyGyroJerkMagnitude.std.. = Time body measurement gyroscope jerk magnitude (STD)
+* FourierTransformBodyAcc.std...XDirection = Fast Fourier Transform accelorometer X Direction (STD)
+* FourierTransformBodyAcc.std...YDirection = Fast Fourier Transform accelorometer Y Direction (STD)
+* FourierTransformBodyAcc.std...ZDirection = Fast Fourier Transform accelorometer Z Direction (STD)
+* FourierTransformBodyAccJerk.std...XDirection = Fast Fourier Transform accelorometer jerk X Direction (STD)
+* FourierTransformBodyAccJerk.std...YDirection =  Fast Fourier Transform accelorometer jerk Direction (STD)
+* FourierTransformBodyAccJerk.std...ZDirection = Fast Fourier Transform accelorometer jerk Z Direction (STD)
+* FourierTransformBodyGyro.std...XDirection =  Fast Fourier Transform Gyroscope X Direction (STD)
+* FourierTransformBodyGyro.std...YDirection =  Fast Fourier Transform Gyroscope Y Direction (STD)
+* FourierTransformBodyGyro.std...ZDirection =  Fast Fourier Transform Gyroscope Z Direction (STD)
+* FourierTransformBodyAccMagnitude.std.. = Fast Fourier Transform body accelorometer magnitude (STD)
+* FourierTransformBodyBodyAccJerkMagnitude.std.. = Fast Fourier Transform body accelorometer jerk magnitude (STD)
+* FourierTransformBodyBodyGyroMagnitude.std.. = Fast Fourier Transform body gyroscope magnitude (STD)
+* FourierTransformBodyBodyGyroJerkMagnitude.std.. = Fast Fourier Transform body gyroscope jerk magnitude (STD)
